@@ -1,25 +1,4 @@
-# Data Center API
-
-A simple rest api that has an endpoint that calculates how many DevOps Enginers (DEs) are necessary (the minimum!), for a range of a Data Centers, as well as calculating which Data Center is best for a DM (DevOps Manager).
-
-## How to run it (locally):
-    $ python3 -m venv <venv_path>
-    $ source <venv_path>/bin/activate
-    $ pip install -r requirements.lock.txt
-    $ cd src && python manange.py runserver
-
-Open your browser at this link:
-
-http://127.0.0.1:8000/load-impact/best-dc-setup?DM_capacity=12&DE_capacity=7&data_centers=[{"name": "Berlin", "servers": 11},{"name": "Stockholm", "servers": 21}]
-
-(Select full link then copy/paste it on browser)
-
-
-You can also use some of the postman collection requests that I've done, available at the source of the repository:
-Load Impact.postman_collection.json
-
-
-# MIT License
+MIT License
 
 Copyright (c) [2019] [Nuno Diogo da Silva diogosilva.nuno@gmail.com]
 

@@ -22,7 +22,7 @@ ALLOWED_HOSTS = []
 SITE_ID = 1
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    ('Nuno Diogo da Silva', 'diogosilva.nuno@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -39,6 +39,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+
+    'loadimpact.apps.LoadimpactConfig',
 )
 
 MIDDLEWARE = [
