@@ -8,8 +8,8 @@ from .serializers import DataCenterSetupSerializer
 @api_view(['GET'])
 def best_datacenter_setup(request):
     """
-    API View responsible of returning the minimum DEs necessary and the best Data Center for a given
-    Data Centers Setup.
+    API View responsible of returning the 
+    minimum DEs necessary and the best Data Center to the DM (DevOps Manager), for a given Data Centers Setup.
     """
 
     serializer = DataCenterSetupSerializer(data=request.GET)
