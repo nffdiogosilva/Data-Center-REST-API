@@ -15,6 +15,10 @@ http://127.0.0.1:8000/load-impact/best-dc-setup?DM_capacity=12&DE_capacity=7&dat
 (Select full link then copy/paste it on browser)
 
 
+You can also use some of the postman collection requests that I've done, available at the source of the repository:
+Load Impact.postman_collection.json
+
+
 # MIT License
 
 Copyright (c) [2019] [Nuno Diogo da Silva diogosilva.nuno@gmail.com]

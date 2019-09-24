@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "2c5d1ddf-929a-4da6-902d-b94c5050d124",
+		"name": "Load Impact",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Test 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "DM_capacity",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "DE_capacity",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "data_centers",
+							"value": "[{\"name\": \"Paris\", \"servers\": 20},{\"name\": \"Stockholm\", \"servers\": 62}]",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/load-impact/best-dc-setup?DM_capacity=20&DE_capacity=8&data_centers=[{\"name\": \"Paris\", \"servers\": 20},{\"name\": \"Stockholm\", \"servers\": 62}]",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"load-impact",
+						"best-dc-setup"
+					],
+					"query": [
+						{
+							"key": "DM_capacity",
+							"value": "20"
+						},
+						{
+							"key": "DE_capacity",
+							"value": "8"
+						},
+						{
+							"key": "data_centers",
+							"value": "[{\"name\": \"Paris\", \"servers\": 20},{\"name\": \"Stockholm\", \"servers\": 62}]"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "DM_capacity",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "DE_capacity",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "data_centers",
+							"value": "[{\"name\": \"Paris\", \"servers\": 20},{\"name\": \"Stockholm\", \"servers\": 62}]",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/load-impact/best-dc-setup?DM_capacity=6&DE_capacity=10&data_centers=[{\"name\": \"Paris\", \"servers\": 30},{\"name\": \"Stockholm\", \"servers\": 66}]",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"load-impact",
+						"best-dc-setup"
+					],
+					"query": [
+						{
+							"key": "DM_capacity",
+							"value": "6"
+						},
+						{
+							"key": "DE_capacity",
+							"value": "10"
+						},
+						{
+							"key": "data_centers",
+							"value": "[{\"name\": \"Paris\", \"servers\": 30},{\"name\": \"Stockholm\", \"servers\": 66}]"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test 3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "DM_capacity",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "DE_capacity",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "data_centers",
+							"value": "[{\"name\": \"Paris\", \"servers\": 20},{\"name\": \"Stockholm\", \"servers\": 62}]",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/load-impact/best-dc-setup?DM_capacity=12&DE_capacity=7&data_centers=[{\"name\": \"Berlin\", \"servers\": 11},{\"name\": \"Stockholm\", \"servers\": 21}]",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"load-impact",
+						"best-dc-setup"
+					],
+					"query": [
+						{
+							"key": "DM_capacity",
+							"value": "12"
+						},
+						{
+							"key": "DE_capacity",
+							"value": "7"
+						},
+						{
+							"key": "data_centers",
+							"value": "[{\"name\": \"Berlin\", \"servers\": 11},{\"name\": \"Stockholm\", \"servers\": 21}]"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "2978040a-a832-4bf4-9c88-b9b91d140e6f",
+			"key": "DM_capacity",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "1f08dd56-b1da-410b-bba9-e714c4cf58bf",
+			"key": "DE_capacity",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "68e554c1-7bb3-4159-aca6-869c23bce422",
+			"key": "data_centers",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
